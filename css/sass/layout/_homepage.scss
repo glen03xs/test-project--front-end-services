@@ -1,18 +1,72 @@
-// Welcome Area
-.welcome-area {
-    background: url(../img/welcome-bg-placeholder.jpg);
-    height: 658px;
-    background-position: 0% 0px;
-}
+/*--------------------------------------------------------------------------------------/*
+ Homepage
+/*--------------------------------------------------------------------------------------*/
+/*-------------- Slider --------------*/
 
-.welcome-table {
-    display: table;
-    width: 100%;
+.slider, .slides {
     height: 100%;
-    text-align: center;
 }
 
-.welcome-cell {
-    display: table-cell;
-    vertical-align: middle;
+.slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 0 7em;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(22, 22, 22);
+        opacity: .30;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+        z-index: -1;
+    }
+
+    &__title, p {
+        color: $color-text-light;
+    }
+
+    &__title {
+        font-size: 3.5rem;
+        line-height: 3.75rem;
+        margin-bottom: .75em;        
+    }
+
+    p {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .cta {
+        margin-top: 2em;
+        text-align: center;
+
+        &__button {
+            background: $color-2; 
+            border: 2px solid $color-3;
+            border-radius: 0;
+            color: $color-1;
+            display: inline-block;
+            font-family: $font-1;
+            font-size: 16px;
+            padding: 14px 32px;
+            text-transform: lowercase;
+
+            &:hover {
+                background: $color-1;
+                border-color: $color-2;
+                color: $color-2;
+            }
+        }
+    }
 }

@@ -5722,7 +5722,12 @@ body {
   -moz-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   color: #333;
-  font: 16px/24px "Lato", Helvetica, Arial, sans-serif; }
+  font: 16px/24px "Droid Serif", Helvetica, Arial, sans-serif; }
+
+body,
+html {
+  height: 100%;
+  margin: 0; }
 
 /*-------------- Typography --------------*/
 /** Heading **/
@@ -5733,7 +5738,7 @@ h4,
 h5,
 h6 {
   color: #333;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", Helvetica, Arial, sans-serif;
   font-weight: normal;
   clear: both; }
 
@@ -5765,7 +5770,8 @@ h6 {
 
 p {
   margin-bottom: 1.25em;
-  line-height: 1.10em; }
+  line-height: 1.10em;
+  font-family: "Montserrat", Helvetica, serif; }
 
 /** Link **/
 a {
@@ -6047,20 +6053,61 @@ textarea {
 /*---------------------------------------------------------------------------------------
  Header Styles
 * --------------------------------------------------------------------------------------*/
-.welcome-area {
-  background: url(../img/welcome-bg-placeholder.jpg);
-  height: 658px;
-  background-position: 0% 0px; }
+/*--------------------------------------------------------------------------------------/*
+ Homepage
+/*--------------------------------------------------------------------------------------*/
+/*-------------- Slider --------------*/
+.slider, .slides {
+  height: 100%; }
 
-.welcome-table {
-  display: table;
-  width: 100%;
+.slide {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  text-align: center; }
-
-.welcome-cell {
-  display: table-cell;
-  vertical-align: middle; }
+  justify-content: center;
+  padding: 0 7em;
+  position: relative;
+  z-index: 1; }
+  .slide:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #161616;
+    opacity: .30;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+    z-index: -1; }
+  .slide__title, .slide p {
+    color: #fff; }
+  .slide__title {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    margin-bottom: .75em; }
+  .slide p {
+    line-height: 1.5rem;
+    font-size: 1rem; }
+  .slide .cta {
+    margin-top: 2em;
+    text-align: center; }
+    .slide .cta__button {
+      background: #ecffcc;
+      border: 2px solid #20b190;
+      border-radius: 0;
+      color: #26d1a4;
+      display: inline-block;
+      font-family: "Droid Serif", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      padding: 14px 32px;
+      text-transform: lowercase; }
+      .slide .cta__button:hover {
+        background: #26d1a4;
+        border-color: #ecffcc;
+        color: #ecffcc; }
 
 /* ---------------------------------------------------------------------------------------
  Main Styles

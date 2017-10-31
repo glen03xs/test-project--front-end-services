@@ -4,8 +4,8 @@
 
  /*-------------- Typography --------------*/
 $base-font-size: 16px;
-$font-1: "Lato", Helvetica, Arial, sans-serif;
-$font-2: "Noto Sans", Helvetica, serif;
+$font-1: 'Droid Serif', Helvetica, Arial, sans-serif;
+$font-2: 'Montserrat', Helvetica, serif;
 
 $baseline: $base-font-size * 1.5;
 
@@ -15,12 +15,13 @@ $color-link: #4183c4;
 $color-link-hover: #333;
 
 $color-text: #333;
-$color-light-text: #777;
+$color-text-light: #fff;
 
 $color-hr: #eee;
 
-$color-1:#4183c4;
-$color-2:#Efefef;
+$color-1:#26d1a4;
+$color-2:#ecffcc;
+$color-3: #20b190;
 
 $color-validation-error: red;
 $color-validation-sucsess: green;
