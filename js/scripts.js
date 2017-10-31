@@ -6,6 +6,30 @@
 
 $(document).ready(function() {
 
+    // set owl-carousel width equals to owl-wrapper width
+    function owlWrapperWidth( selector ) {
+        $(selector).each(function(){
+            $(this).find('.owl-carousel').outerWidth( $(this).closest( selector ).innerWidth() );
+        });
+    }
+  
+    // trigger on start and resize
+    owlWrapperWidth( '.slider' );
+    $( window ).resize(function() {
+    owlWrapperWidth( $('.slider') );
+    });
+
+    // Wow Slider
+    $("#owl-slider").owlCarousel({
+        navigation : true, 
+        slideSpeed : 300,
+        items: 1,
+        paginationSpeed : 400,
+        singleItem: true,
+        pagination: true,
+        rewindSpeed: 500,
+        dots: true
+    });
 });
 
 
