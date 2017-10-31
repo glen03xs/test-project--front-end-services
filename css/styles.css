@@ -6083,7 +6083,8 @@ textarea {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
     z-index: -1; }
   .slide__title, .slide p {
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
   .slide__title {
     font-size: 3.5rem;
     line-height: 3.75rem;
