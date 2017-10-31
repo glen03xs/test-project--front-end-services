@@ -2,18 +2,24 @@
   "name": "front-end-services-test-project",
   "version": "1.0.0",
   "description": "A test project for job application",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/glen03xs/my-html-template.git"
+    "url": "git+https://github.com/glen03xs/test-project--front-end-services"
   },
   "author": "Glen Nepomuceno",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/glen03xs/my-html-template/issues"
+    "url": "https://github.com/glen03xs/test-project--front-end-services/issues"
   },
-  "homepage": "https://github.com/glen03xs/my-html-template#readme"
+  "homepage": "https://github.com/glen03xs/test-project--front-end-services#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.2.1",
+    "owl-carousel": "^1.0.0"
+  }
 }
