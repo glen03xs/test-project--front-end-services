@@ -1,0 +1,18 @@
+// Welcome Area
+.welcome-area {
+    background: url(../img/welcome-bg-placeholder.jpg);
+    height: 658px;
+    background-position: 0% 0px;
+}
+
+.welcome-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.welcome-cell {
+    display: table-cell;
+    vertical-align: middle;
+}

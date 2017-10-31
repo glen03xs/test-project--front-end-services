@@ -1,0 +1,19 @@
+{
+  "name": "front-end-services-test-project",
+  "version": "1.0.0",
+  "description": "A test project for job application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glen03xs/my-html-template.git"
+  },
+  "author": "Glen Nepomuceno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glen03xs/my-html-template/issues"
+  },
+  "homepage": "https://github.com/glen03xs/my-html-template#readme"
+}
